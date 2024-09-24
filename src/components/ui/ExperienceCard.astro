@@ -1,0 +1,37 @@
+---
+import Badge from './Badge.astro';
+
+interface Props {
+	company: string;
+	job: string;
+  body: string;
+  type: 'Full-time' | 'Part-time';
+  startDate: {
+    month: Month,
+    year: number
+  };
+  endDate?: {
+    month: Month,
+    year: number
+  };
+  techStack: string[]
+}
+
+const { company, job, startDate, endDate, techStack, body } = Astro.props;
+---
+
+<article class="rounded-xl border p-8 flex flex-col gap-2">
+  <div class="flex">
+    <div class="w-1/3 flex flex-col justify-center">
+      <h3 class="font-bold text-xl">{company}</h3>
+      <h4 class="font-bold text-lg text-low dark:text-low-dark">{job}</h4>
+      <span>{`${startDate.month} ${startDate.year} - ${endDate ? `${endDate?.month} ${endDate?.year}` : `Present`}`}</span>
+    </div>
+    <div class="w-2/3 space-y-2">
+      <p class="text-pretty">{body}</p>
+      <ul class="flex gap-2">
+        {techStack.map(tech => <li><Badge>{tech}</Badge></li>)}
+      </ul>
+    </div>
+  </div>
+</article>

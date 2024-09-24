@@ -1,0 +1,36 @@
+---
+import ProjectCard from '../ui/ProjectCard.astro';
+import Project1Image1 from '../../assets/images/visualtek.png'
+import Project1Image2 from '../../assets/images/game-template.png'
+---
+
+<section id="Projects">
+  <h2 class="font-bold text-2xl mb-4">Proyectos</h2>
+  <div class="grid grid-cols-2 gap-12">
+    <ProjectCard
+      title='Visualtek Engineering'
+      body='Página web con ecommerce hecha a medida para un cliente.'
+      imageSrc={Project1Image1.src}
+      href='https://visualtek.es'
+      techStack={[
+        "Astro", 
+        "React", 
+        "Typescript", 
+        "TailwindCSS", 
+        "Stripe"
+      ]}
+    />
+    <ProjectCard
+      title='Multiplayer room game template' 
+      body='Plantilla para crear juegos multijugador. Permite crear salas con chat en vivo e invitar a usuarios a unirse mediante enlace.'
+      imageSrc={Project1Image2.src}
+      href='https://github.com/jarandadev/hr-game'
+      techStack={[
+        "NextJS", 
+        "Typescript", 
+        "TailwindCSS",
+        "Socket.IO"
+      ]}
+    />
+  </div>
+</section>

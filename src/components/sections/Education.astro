@@ -1,0 +1,31 @@
+---
+import EducationCard from "../ui/EducationCard.astro";
+import EducationImage1 from "../../assets/images/uab.jpeg"
+import EducationImage2 from "../../assets/images/badia.jpeg"
+---
+
+<section id="Education">
+  <h2 class="font-bold text-2xl mb-4">Educación</h2>
+  <div class="flex flex-col gap-8">
+    <EducationCard
+      place="Universitat Autònoma de Barcelona"
+      title="Ingeniería informática"
+      startYear={2023}
+      imageSrc={EducationImage1.src}
+    />
+    <EducationCard
+    place="Institut de Badia del Vallès"
+    title="CFGS, Administración de Sistemas y Redes, Perfil Profesional Ciberseguridad"
+    startYear={2020}
+    endYear={2023}
+    imageSrc={EducationImage2.src}
+    />
+    <EducationCard
+      place="Institut de Badia del Vallès"
+      title="CFGM, Sistemas Microinformáticos y Redes"
+      startYear={2018}
+      endYear={2020}
+      imageSrc={EducationImage2.src}
+    />
+  </div>
+</section>

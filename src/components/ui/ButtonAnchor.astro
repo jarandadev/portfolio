@@ -1,0 +1,15 @@
+---
+import { cn } from '../utils/utils';
+
+export interface Props {
+  href: string;
+  className: string;
+  isIconOnly?: boolean;
+}
+
+const { href, className, isIconOnly = false } = Astro.props;
+---
+
+<a href={href} target="_blank" class={cn(className,"font-medium flex gap-2 w-fit border hover:border-transparent rounded-full hover:bg-background-dark dark:hover:bg-background hover:text-text-dark dark:hover:text-text px-4 py-2")}>
+  <slot />
+</a>

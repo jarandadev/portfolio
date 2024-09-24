@@ -1,0 +1,36 @@
+---
+import ExperienceCard from '../ui/ExperienceCard.astro';
+---
+
+<section id="Experience">
+  <h2 class="font-bold text-2xl mb-4">Experiencia</h2>
+  <div class="flex flex-col gap-8">
+    <ExperienceCard
+      company='Optimal Way Consulting'
+      job='Full Stack Developer'
+      type='Part-time'
+      body='Durante mi etapa en Optimal Way Consulting, implementé un sistema de monitoreo de recursos en servidores de AWS y participé en el desarrollo de la herramienta OWBASKET. Esta experiencia me permitió crecer significativamente como desarrollador Full Stack, gracias al apoyo de un equipo excepcional.'
+      startDate={{month: 'Nov', year: 2022}}
+      endDate={{month: 'Sep', year: 2023}}
+      techStack={["Typescript", "React", "AWS", "Java", "MySQL"]}
+    />
+    <ExperienceCard
+      company='Infinitum Projects',
+      job='Software Developer'
+      type='Part-time'
+      body='En mi experiencia en Infinitum, realicé una variedad de tareas. Comencé con la migración de sitios en WordPress entre Azure y AWS, seguido del rediseño de una página web. Posteriormente, desarrollé un RPA para automatizar procesos y, finalmente, recibí formación en .NET para poder llevar a cabo diversas tareas en el backend.'
+      startDate={{month: 'Sep', year: 2021}}
+      endDate={{month: 'Aug', year: 2022}}
+      techStack={[".NET", "Azure", "AWS", "MySQL", "Microsoft Power Automate", "Wordpress"]}
+    />
+    <ExperienceCard
+      company='Institut La Romànica',
+      job='Computer Technician'
+      type='Part-time'
+      body='En mis prácticas del ciclo medio trabajé como técnico informático en un instituto arreglando ordenadoresadadasd'
+      startDate={{month: 'Oct', year: 2019}}
+      endDate= {{month: 'Feb', year: 2020}}
+      techStack={["Linux", "Redes"]}
+    />
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+import { DarkModeButton } from "./DarkModeButton.tsx";
+import Icon from "./Icon.astro";
+---
+
+<div class="px-6 py-4 w-full h-16 flex place-content-center mx-auto fixed top-0 backdrop-filter backdrop-blur-lg bg-opacity-50 border-b">
+  <nav class="flex justify-between items-center w-full max-w-7xl">
+
+    <a href="/">
+      <Icon name="github" />
+    </a>
+    
+    <ul class="flex gap-10 [&>li>a]:text-low dark:[&>li>a]:text-low-dark items-center">
+      <li>
+        <a href="#Experience" class="hover:text-text hover:dark:text-white">Experiencia</a>
+      </li>
+      <li>
+        <a href="#Projects" class="hover:text-text hover:dark:text-white">Proyectos</a>
+      </li>
+      <li>
+        <a href="#Education" class="hover:text-text hover:dark:text-white">Estudios</a>
+      </li>
+      <li>
+        <a href="#TechStack" class="hover:text-text hover:dark:text-white">Tecnologías</a>
+      </li>
+      <li class="hover:text-text hover:dark:text-white">
+        <DarkModeButton client:load />
+      </li>
+    </ul>
+
+  </nav>
+</div>

@@ -1,0 +1,21 @@
+---
+interface Props {
+	title: string;
+  place: string;
+	imageSrc: string;
+	startYear: number;
+  endYear?: number;
+}
+
+const { title, place, startYear, endYear, imageSrc } = Astro.props;
+---
+<article class="w-full rounded-xl border p-8 flex flex-col gap-2 justify-between">
+	<div class="flex gap-8">
+		<img src={imageSrc} alt="Education place" class="rounded-xl" />
+		<div class="flex flex-col">
+			<h3 class="text-lg font-bold">{title}</h3>
+			<p class="text-pretty">{place}</p>
+			<span class="text-low dark:text-low-dark">{`${startYear} - ${endYear ? `${endYear}` : `Present`}`}</span>
+		</div>
+	</div>
+</articl>
