@@ -3,6 +3,6 @@ type Tech = {
   iconName: string;
 }
 
-type IconName = 'linkedin' | 'github' | 'nextjs' | 'astro' | 'tailwindcss' | 'typescript' | 'html' | 'css' | 'javascript' | 'node' | 'stripe' | 'react' | 'internet' | 'link' | 'sun' | 'moon';
+type IconName = 'linkedin' | 'github' | 'nextjs' | 'astro' | 'tailwindcss' | 'typescript' | 'html' | 'css' | 'javascript' | 'node' | 'stripe' | 'react' | 'internet' | 'link' | 'sun' | 'moon' | 'study' | 'code' | 'job' | 'download';
 
 type Month = 'Jan' | 'Feb' | 'Mar' | 'Apr' | 'May' | 'Jun' | 'Jul' | 'Aug' | 'Sep' | 'Oct' | 'Nov' | 'Dec';

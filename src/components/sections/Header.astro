@@ -1,3 +1,27 @@
-<header id="Header">
+---
+import Icon from "../ui/Icon.astro";
+---
 
+<header id="Header" class="flex gap-24 px-44 items-center min-h-screen">
+  <div class="space-y-4 w-fit">
+    <h1 class="font-bold text-7xl">Joan Aranda</h1>
+    <h2 class="font-bold text-3xl text-low dark:text-low-dark">Full Stack Developer</h2>
+    <p class="text-pretty">Estudiante de segundo año de carrera con muchas ganas de iniciar nuevos proyectos. Mi principal objetivo es seguir creciendo como desarrollador.</p>
+    <ul class="flex gap-4 items-center">
+      <li>
+        <a href="https://github.com/jarandadev" target="_blank"><Icon name="github" className="w-12 h-12 hover:text-text text-low dark:hover:text-text-dark dark:text-low-dark" /></a>
+      </li>
+      <li>
+        <a href="https://es.linkedin.com/in/joan-aranda-003b23255?trk=people-guest_people_search-card" target="_blank"><Icon name="linkedin" className="w-14 h-14 hover:text-text text-low dark:hover:text-text-dark dark:text-low-dark" /></a>
+      </li>
+      <li>
+        <a href="/" class="flex gap-3 items-center py-2.5 px-6 rounded-xl hover:bg-text dark:hover:bg-text-dark text-background dark:text-background-dark bg-low dark:bg-low-dark font-medium">
+          <Icon name="download" />Descargar CV
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="rounded-full h-[270px] min-w-[270px] bg-low dark:bg-low-dark flex justify-center items-center">
+    <span class="text-lg font-semibold text-background dark:text-background-dark">Face picture</span>
+  </div>
 </header>

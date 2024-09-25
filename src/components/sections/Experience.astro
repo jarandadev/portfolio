@@ -1,9 +1,13 @@
 ---
 import ExperienceCard from '../ui/ExperienceCard.astro';
+import Icon from '../ui/Icon.astro';
 ---
 
 <section id="Experience">
-  <h2 class="font-bold text-2xl mb-4">Experiencia</h2>
+  <div class="flex gap-2 items-center  mb-6">
+    <Icon name="job" />
+    <h2 class="font-bold text-2xl">Experiencia</h2>
+  </div>  
   <div class="flex flex-col gap-8">
     <ExperienceCard
       company='Optimal Way Consulting'
@@ -27,10 +31,10 @@ import ExperienceCard from '../ui/ExperienceCard.astro';
       company='Institut La Romànica',
       job='Computer Technician'
       type='Part-time'
-      body='En mis prácticas del ciclo medio trabajé como técnico informático en un instituto arreglando ordenadoresadadasd'
+      body='Durante mis prácticas en el Institut La Romànica, me encargué principalmente de la reparación y mantenimiento de PCs, la configuración y gestión del servidor y la red del centro, además de la resolución de incidencias técnicas reportadas por los usuarios.'
       startDate={{month: 'Oct', year: 2019}}
       endDate= {{month: 'Feb', year: 2020}}
-      techStack={["Linux", "Redes"]}
+      techStack={["Hardware","OS","Network"]}
     />
   </div>
 </section>

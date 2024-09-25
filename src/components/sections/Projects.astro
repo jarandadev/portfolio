@@ -2,11 +2,15 @@
 import ProjectCard from '../ui/ProjectCard.astro';
 import Project1Image1 from '../../assets/images/visualtek.png'
 import Project1Image2 from '../../assets/images/game-template.png'
+import Icon from '../ui/Icon.astro';
 ---
 
 <section id="Projects">
-  <h2 class="font-bold text-2xl mb-4">Proyectos</h2>
-  <div class="grid grid-cols-2 gap-12">
+  <div class="flex gap-2 items-center  mb-6">
+    <Icon name="code" />
+    <h2 class="font-bold text-2xl">Proyectos</h2>
+  </div>
+  <div class="grid grid-cols-2 gap-8">
     <ProjectCard
       title='Visualtek Engineering'
       body='Página web con ecommerce hecha a medida para un cliente.'

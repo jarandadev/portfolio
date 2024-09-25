@@ -2,10 +2,14 @@
 import EducationCard from "../ui/EducationCard.astro";
 import EducationImage1 from "../../assets/images/uab.jpeg"
 import EducationImage2 from "../../assets/images/badia.jpeg"
+import Icon from "../ui/Icon.astro";
 ---
 
 <section id="Education">
-  <h2 class="font-bold text-2xl mb-4">Educación</h2>
+  <div class="flex gap-2 items-center  mb-6">
+    <Icon name="study" />
+    <h2 class="font-bold text-2xl">Educación</h2>
+  </div>
   <div class="flex flex-col gap-8">
     <EducationCard
       place="Universitat Autònoma de Barcelona"

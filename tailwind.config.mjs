@@ -5,7 +5,7 @@ export default {
 	theme: {
 		extend: {
 			borderColor: (theme) => ({
-        DEFAULT: theme("colors.gray.200"),
+        DEFAULT: theme("colors.gray.500"),
       }),
 			colors: {
 				low: {

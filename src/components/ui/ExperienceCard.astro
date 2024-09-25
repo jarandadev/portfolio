@@ -14,7 +14,7 @@ interface Props {
     month: Month,
     year: number
   };
-  techStack: string[]
+  techStack?: string[]
 }
 
 const { company, job, startDate, endDate, techStack, body } = Astro.props;
@@ -29,9 +29,9 @@ const { company, job, startDate, endDate, techStack, body } = Astro.props;
     </div>
     <div class="w-2/3 space-y-2">
       <p class="text-pretty">{body}</p>
-      <ul class="flex gap-2">
+      {techStack && <ul class="flex gap-2">
         {techStack.map(tech => <li><Badge>{tech}</Badge></li>)}
-      </ul>
+      </ul>}
     </div>
   </div>
 </article>
